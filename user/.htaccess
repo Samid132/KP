@@ -1,0 +1,41 @@
+Options -Indexes
+RewriteRule ^/?$ hm.php [NC,L]
+RewriteRule ^izin?$ izin.php [NC,L]
+RewriteRule ^absen?$ absen.php [NC,L]
+
+RewriteRule ^tambahk?$ tambahkaryawan.php [NC,L]
+
+
+
+
+
+RewriteRule ^baner?$ views/baner/banerr.php [NC,L]
+RewriteRule ^kobaner?$ views/baner/kobanerr.php [NC,L]
+RewriteRule ^logout?$ ./../logout.php [NC,L]
+
+
+RewriteRule ^tambahpost?$ prosestambah/tambahpost.php [NC,L]
+
+
+
+
+
+
+
+RewriteRule  ^hpenjualan/?([^'.,?*&^%$#@!/]+)$       hapus/hpenjualan.php?&id=$1       [NC,L]
+
+
+RewriteRule  ^karyawan/?([^'.,?*&^%$#@!/]+)$       edit_karyawan.php?&id_karyawan=$1       [NC,L]
+
+
+
+
+
+
+RewriteRule  ^profile/?([^'.,?*&^%$#@!/]+)$       profile.php?id=$1       [NC,L]
+RewriteRule  ^user/?([^'.,?*&^%$#@!/]+)$       euser.php?id=$1       [NC,L]
+RewriteRule  ^profileedit/?([^'.,?*&^%$#@!/]+)$       prosesedit/profileedit.php?id=$1       [NC,L]
+RewriteRule ^cetak_barang?$ lap_barang.php [NC,L]
+
+
+

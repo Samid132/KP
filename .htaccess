@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !\.(?:css|js|jpg|gif|png)$ [NC]
+Options -Indexes
+RewriteRule ^/?$ hm.php [NC,L]
+RewriteRule ^ceklogin?$ views/check-login.php [NC,L]
+RewriteRule ^ceklogin2?$ views/check-login2.php [NC,L]
+
+RewriteRule ^login2?$ login-user.php [NC,L]
+
+
